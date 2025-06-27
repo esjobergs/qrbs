@@ -96,7 +96,7 @@
     if (!isWorkHours) {
       showMessage("❌ Det gick inte att checka in. Vi har öppet mellan 08:00–17:00.");
     } else if (!lastCheckin || nowMs - parseInt(lastCheckin) > checkinExpiry) {
-      fetch("https://prod-24.westus.logic.azure.com:443/workflows/bbf5ab986fdb44979c88f0fd8b66e30b/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=m63Offwes_4n8sJBjQXWXvCk9sPifJdx7TDiRQ90VO8", {
+      fetch("https://prod-89.westus.logic.azure.com:443/workflows/5d8893e465964f8f8823879d66f75420/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=THPbdxi6and3THYnV6gg7__ll9D1bH1BtxpmXH5KS5Q", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
